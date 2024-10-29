@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for participating! Your feedback is essential in helpinng us gather insights to improve our services. Please take a few minutes to answer the questions honestly. Your responses will remain confidential and are valued in shaping our future efforts.</p>
+
+    <form action="" id="survey-form">
+        <label id="name-label" for="name">Name: </label>
+        <input id="name" type="text" name="name" placeholder="Enter your name: " required>
+
+        <label id="email-label" for="email">Email: </label>
+        <input id="email" type="email" name="email" placeholder="Enter your email" required>
+
+        <label id="number-label" for="number">Age: </label>
+        <input id="number" type="number" name="age" min="1" max="100" placeholder="Enter your age">
+
+        
+        <select name="service quality" id="dropdown">
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="poor">Poor</option>
+        </select>
+
+        <p>Would you recommend us to a friend?</p>
+        <label><input type="radio" name="recommend" value="yes" required>Yes</label>
+        <label><input type="radio" name="recommend" value="no" required>No</label>
+
+        <p>Which aspects of our service met your expectations? (Select all that apply)</p>
+        <label><input type="checkbox" name="service-quality" value="timeliness"> Timeliness</label>
+        <label><input type="checkbox" name="service-quality" value="professionalism"> Professionalism</label>
+        <label><input type="checkbox" name="service-quality" value="courtesy"> Courtesy of Staff</label>
+        <label><input type="checkbox" name="service-quality" value="efficiency"> Efficiency</label>
+        <label><input type="checkbox" name="service-quality" value="problem-solving"> Problem-solving Ability</label>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Enter any additional feedback here"></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
