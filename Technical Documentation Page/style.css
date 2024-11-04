@@ -1,90 +1,77 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    display: flex;
-    font-family: Arial, sans-serif;
-  }
-  
-  #navbar {
-    width: 200px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  #navbar header {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-  }
-  
-  .nav-link {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    margin: 0.5em 0;
-    font-size: 1.1em;
-  }
-  
-  .nav-link:hover {
-    text-decoration: underline;
-  }
-  
-  #main-doc {
-    margin-left: 220px;
-    padding: 20px;
-    max-width: 800px;
-  }
-  
-  .main-section {
-    margin-bottom: 20px;
-  }
-  
-  .main-section header {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    margin: 10px 0;
-    line-height: 1.6;
-  }
-  
-  code {
-    display: block;
-    background-color: #f4f4f4;
-    padding: 10px;
-    margin: 10px 0;
-    font-family: monospace;
-  }
-  
-  ul {
-    list-style-type: square;
-    padding-left: 20px;
-  }
-  
-  li {
-    margin: 5px 0;
-  }
-  
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  display: flex;
+}
 
-  @media (max-width: 768px) {
-    #navbar {
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  background-color: #323335;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; 
+}
+
+#navbar header {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  display: block;
+  color: #ccc;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+#main-doc {
+  margin-left: 270px; 
+  padding: 20px;
+  max-width: 800px;
+}
+
+.main-section {
+  margin-bottom: 30px;
+}
+
+.main-section header {
+  font-size: 2em;
+  color: #323335;
+  margin-bottom: 10px;
+}
+
+p, code, ul {
+  margin: 10px 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+code {
+  display: block;
+  background-color: #f4f4f4;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+@media (max-width: 800px) {
+  #navbar {
+      position: relative;
       width: 100%;
       height: auto;
-      position: static;
-    }
-  
-    #main-doc {
-      margin-left: 0;
-      padding: 10px;
-    }
   }
-  
+
+  #main-doc {
+      margin-left: 0;
+  }
+}

@@ -1,79 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Technical Documentation</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Technical Documentation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <style>
+    @media only screen and (max-width: 800px) {
+    }
+</style>
 
-  <nav id="navbar">
-    <header>Documentation Topics</header>
-    <a href="#Introduction" class="nav-link">Introduction</a>
-    <a href="#Getting_Started" class="nav-link">Getting Started</a>
-    <a href="#Syntax" class="nav-link">Syntax</a>
-    <a href="#Examples" class="nav-link">Examples</a>
-    <a href="#Conclusion" class="nav-link">Conclusion</a>
-  </nav>
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Data_Types">Data Types</a>
+        <a class="nav-link" href="#Control_Flow">Control Flow</a>
+        <a class="nav-link" href="#Functions">Functions</a>
+        <a class="nav-link" href="#Modules_and_Packages">Modules and Packages</a>
+    </nav>
 
-  <main id="main-doc">
-    
-    <section id="Introduction" class="main-section">
-      <header>Introduction</header>
-      <p>This section provides an overview of the technical documentation.</p>
-      <p>The goal is to help users understand the purpose of the documentation.</p>
-      <code>const intro = "Introduction code snippet";</code>
-      <ul>
-        <li>Overview</li>
-        <li>Objectives</li>
-      </ul>
-    </section>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Python is a high-level, interpreted programming language known for its simplicity and readability.</p>
+            <p>Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming.</p>
+            <p>It is widely used in web development, data science, automation, and software development.</p>
+            <p>The Python Software Foundation manages its development and releases new versions regularly.</p>
+            <code>print("Hello, World!")</code>
+            <ul>
+                <li>High-level language</li>
+                <li>Interpreted</li>
+                <li>Multi-paradigm</li>
+            </ul>
+        </section>
 
-    <section id="Getting_Started" class="main-section">
-      <header>Getting Started</header>
-      <p>This section guides users on how to get started with the documentation.</p>
-      <p>It includes installation steps and initial setup instructions.</p>
-      <code>let setup = "Setup instructions code snippet";</code>
-      <ul>
-        <li>Install dependencies</li>
-        <li>Configure environment</li>
-      </ul>
-    </section>
+        <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <p>Python has a variety of built-in data types, making it versatile for different applications.</p>
+            <p>The main data types are int, float, str, list, tuple, dict, and set.</p>
+            <p>Each data type serves different purposes and has unique properties.</p>
+            <p>Type checking in Python is dynamic, meaning types are checked during runtime.</p>
+            <code>x = 10  # int</code>
+            <code>y = 3.14  # float</code>
+            <ul>
+                <li>int</li>
+                <li>float</li>
+                <li>str</li>
+                <li>list</li>
+                <li>dict</li>
+            </ul>
+        </section>
 
-    <section id="Syntax" class="main-section">
-      <header>Syntax</header>
-      <p>This section covers the syntax used in this technical documentation.</p>
-      <p>Proper syntax is essential for accurate implementation.</p>
-      <code>let syntaxExample = "Syntax example code";</code>
-      <ul>
-        <li>Variables</li>
-        <li>Functions</li>
-      </ul>
-    </section>
+        <section class="main-section" id="Control_Flow">
+            <header>Control Flow</header>
+            <p>Control flow structures in Python include if, elif, else, for, while, and try-except.</p>
+            <p>These structures allow the programmer to control the flow of the program based on conditions.</p>
+            <p>Control flow helps in building more complex logic by branching and looping.</p>
+            <p>Python also supports exception handling for error management.</p>
+            <code>if x > 0:</code>
+            <code>    print("Positive")</code>
+            <ul>
+                <li>If-else</li>
+                <li>For loop</li>
+                <li>While loop</li>
+                <li>Exception handling</li>
+            </ul>
+        </section>
 
-    <section id="Examples" class="main-section">
-      <header>Examples</header>
-      <p>This section showcases examples to illustrate how the code works.</p>
-      <p>Examples provide clarity and practical understanding.</p>
-      <code>console.log("Example code");</code>
-      <ul>
-        <li>Basic examples</li>
-        <li>Advanced examples</li>
-      </ul>
-    </section>
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <p>Functions in Python allow code to be reusable and organized.</p>
+            <p>A function is defined using the def keyword and can take parameters.</p>
+            <p>Python also supports lambda functions, which are anonymous functions used for short operations.</p>
+            <p>Functions can return values using the return keyword.</p>
+            <code>def greet(name):</code>
+            <code>    return f"Hello, {name}"</code>
+            <ul>
+                <li>def keyword</li>
+                <li>Parameters</li>
+                <li>Lambda functions</li>
+                <li>Return statement</li>
+            </ul>
+        </section>
 
-    <section id="Conclusion" class="main-section">
-      <header>Conclusion</header>
-      <p>This section summarizes the key points covered in the documentation.</p>
-      <p>It reinforces the main concepts and provides final insights.</p>
-      <code>console.log("Conclusion code");</code>
-      <ul>
-        <li>Summary</li>
-        <li>Final thoughts</li>
-      </ul>
-    </section>
-
-  </main>
+        <section class="main-section" id="Modules_and_Packages">
+            <header>Modules and Packages</header>
+            <p>Python supports modular programming by allowing code to be organized in modules and packages.</p>
+            <p>A module is a single Python file, and a package is a directory of modules.</p>
+            <p>Modules can be imported into other programs using the import keyword.</p>
+            <p>This allows for better code organization and reusability.</p>
+            <code>import math</code>
+            <code>from datetime import datetime</code>
+            <ul>
+                <li>Modules</li>
+                <li>Packages</li>
+                <li>Importing modules</li>
+                <li>Using packages</li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
